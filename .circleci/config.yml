@@ -5,7 +5,9 @@ jobs:
       - image: circleci/golang:latest
     steps:
       - checkout
-      - run: go get -u github.com/raviqqe/muffet && muffet http://www.nomin.cloud/
+      - run: go get -u github.com/raviqqe/muffet
+      - run: bash portfolios/jakubtajovsky.sh
+      
 workflows:
   version: 2
   build_and_test:
