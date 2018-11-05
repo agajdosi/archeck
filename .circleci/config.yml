@@ -7,6 +7,8 @@ jobs:
       - checkout
       - run: go get -u github.com/raviqqe/muffet
       - run: bash portfolios/jakubtajovsky.sh
+      - run: bash portfolios/alzbetabacikova.sh
+      - run: bash portfolios/matejsmetana.sh
       
 workflows:
   version: 2
